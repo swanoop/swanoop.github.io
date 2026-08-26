@@ -6,7 +6,5 @@ permalink: /blog/:title/
 markdown: kramdown
 highlighter: rouge
 timezone: Europe/London
-plugins:
-  - jekyll-feed
 exclude:
   - README.md

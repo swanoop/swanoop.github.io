@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Why a CVE is not automatically an OT risk</title>
+  <desc id="desc">A three-stage flow from vulnerability to operational context to OT risk-based treatment.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f1a"/><stop offset="1" stop-color="#101a2a"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4fd1c5"/></marker>
+  </defs>
+  <rect width="1200" height="680" rx="28" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#223049"><path d="M0 80h1200M0 160h1200M0 240h1200M0 320h1200M0 400h1200M0 480h1200M0 560h1200M0 640h1200"/><path d="M80 0v680M160 0v680M240 0v680M320 0v680M400 0v680M480 0v680M560 0v680M640 0v680M720 0v680M800 0v680M880 0v680M960 0v680M1040 0v680M1120 0v680"/></g>
+  <text x="70" y="82" fill="#f3f5f8" font-family="Inter,Arial,sans-serif" font-size="38" font-weight="700">Why a CVE is not automatically an OT risk</text>
+  <text x="70" y="120" fill="#9eb0c0" font-family="Inter,Arial,sans-serif" font-size="20">Technical severity is only one input. Operational context decides the risk.</text>
+  <g font-family="IBM Plex Mono,monospace">
+    <g transform="translate(70 180)">
+      <rect width="310" height="340" rx="22" fill="#101a29" stroke="#4fd1c5" stroke-width="2"/>
+      <circle cx="42" cy="42" r="23" fill="#4fd1c5"/><text x="42" y="50" text-anchor="middle" fill="#08131d" font-size="22" font-weight="700">1</text>
+      <text x="78" y="50" fill="#f3f5f8" font-size="24" font-weight="700">VULNERABILITY</text>
+      <text x="30" y="102" fill="#7be6dc" font-size="16">Confirm the affected asset</text>
+      <g fill="#162536" stroke="#49637c" stroke-width="2">
+        <rect x="36" y="145" width="48" height="72" rx="5"/><rect x="105" y="153" width="68" height="48" rx="5"/><rect x="196" y="153" width="68" height="48" rx="5"/>
+      </g>
+      <g stroke="#4fd1c5" stroke-width="4" filter="url(#glow)"><path d="M45 164h30M45 178h30M45 192h30"/><path d="M120 177h38"/><path d="M211 177h38"/></g>
+      <text x="60" y="244" text-anchor="middle" fill="#9eb0c0" font-size="14">PLC</text><text x="139" y="244" text-anchor="middle" fill="#9eb0c0" font-size="14">HMI</text><text x="230" y="244" text-anchor="middle" fill="#9eb0c0" font-size="14">WORKSTATION</text>
+      <rect x="28" y="278" width="254" height="40" rx="10" fill="#0d2730" stroke="#4fd1c5"/><text x="155" y="304" text-anchor="middle" fill="#d6f6f2" font-size="15">Output: affected asset</text>
+    </g>
+    <path d="M402 350h68" stroke="#4fd1c5" stroke-width="4" marker-end="url(#arrow)"/>
+    <g transform="translate(475 180)">
+      <rect width="310" height="340" rx="22" fill="#101a29" stroke="#4fd1c5" stroke-width="2"/>
+      <circle cx="42" cy="42" r="23" fill="#4fd1c5"/><text x="42" y="50" text-anchor="middle" fill="#08131d" font-size="22" font-weight="700">2</text>
+      <text x="78" y="50" fill="#f3f5f8" font-size="24" font-weight="700">CONTEXT</text>
+      <text x="30" y="102" fill="#7be6dc" font-size="16">Exposure + exploitability</text>
+      <rect x="30" y="142" width="86" height="108" rx="12" fill="#13283a" stroke="#4fd1c5" stroke-dasharray="6 5"/><text x="73" y="170" text-anchor="middle" fill="#7be6dc" font-size="13">OT ZONE</text>
+      <rect x="194" y="142" width="86" height="108" rx="12" fill="#13283a" stroke="#4fd1c5" stroke-dasharray="6 5"/><text x="237" y="170" text-anchor="middle" fill="#7be6dc" font-size="13">IT / REMOTE</text>
+      <g transform="translate(133 164)"><rect width="46" height="60" rx="5" fill="#162536" stroke="#e8a33d"/><path d="M8 16h30M8 28h30M8 40h30" stroke="#e8a33d" stroke-width="3"/><text x="23" y="80" text-anchor="middle" fill="#e8a33d" font-size="12">FIREWALL</text></g>
+      <path d="M116 196h17M179 196h15" stroke="#4fd1c5" stroke-width="4" marker-end="url(#arrow)"/>
+      <rect x="28" y="278" width="254" height="40" rx="10" fill="#0d2730" stroke="#4fd1c5"/><text x="155" y="304" text-anchor="middle" fill="#d6f6f2" font-size="15">Output: realistic attack path</text>
+    </g>
+    <path d="M807 350h68" stroke="#4fd1c5" stroke-width="4" marker-end="url(#arrow)"/>
+    <g transform="translate(880 180)">
+      <rect width="250" height="340" rx="22" fill="#101a29" stroke="#e8a33d" stroke-width="2"/>
+      <circle cx="42" cy="42" r="23" fill="#e8a33d"/><text x="42" y="50" text-anchor="middle" fill="#171109" font-size="22" font-weight="700">3</text>
+      <text x="78" y="50" fill="#f3f5f8" font-size="24" font-weight="700">OT RISK</text>
+      <text x="28" y="102" fill="#f3c77f" font-size="16">Map consequence</text>
+      <g fill="#b7c1d1" font-size="15"><text x="52" y="154">Safety</text><text x="52" y="190">Availability</text><text x="52" y="226">Operations</text><text x="52" y="262">Environment</text></g>
+      <g fill="none" stroke="#e8a33d" stroke-width="3"><circle cx="30" cy="149" r="9"/><circle cx="30" cy="185" r="9"/><circle cx="30" cy="221" r="9"/><circle cx="30" cy="257" r="9"/></g>
+      <rect x="24" y="278" width="202" height="40" rx="10" fill="#302313" stroke="#e8a33d"/><text x="125" y="304" text-anchor="middle" fill="#ffe3b0" font-size="14">Risk-based treatment</text>
+    </g>
+  </g>
+  <g transform="translate(70 570)" font-family="Inter,Arial,sans-serif">
+    <rect width="1060" height="68" rx="16" fill="#111a29" stroke="#223049"/>
+    <text x="30" y="29" fill="#4fd1c5" font-size="17" font-weight="700">KEY IDEA</text>
+    <text x="30" y="53" fill="#c1cad7" font-size="18">Vulnerable asset + exposure + exploitability + operational consequence → context-based OT risk decision</text>
+  </g>
+</svg>

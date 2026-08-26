@@ -1,0 +1,38 @@
+<footer class="container">
+<span>© 2026 Swanoop Ramakrishnan</span>
+<span>OT Cybersecurity | Rail / Critical National Infrastructure</span>
+</footer>
+<script>
+const zones = document.querySelectorAll('.zone');
+const header = document.getElementById('siteHeader');
+const navLinks = document.querySelectorAll('.nav-links a');
+const sectionMap = [...document.querySelectorAll('main section[id]')];
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('in-view'); } });
+}, { threshold: 0.22, rootMargin: '0px 0px -10% 0px' });
+zones.forEach(z => io.observe(z));
+const activeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      navLinks.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id));
+    }
+  });
+}, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+sectionMap.forEach(sec => activeObserver.observe(sec));
+window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+const sceneChips = document.querySelectorAll('.scene-chip');
+const zonesCycle = ['rail','og','renew'];
+let chipIndex = 0;
+function setChip(zone){ sceneChips.forEach(chip => chip.classList.toggle('active', chip.dataset.zone === zone)); }
+setInterval(() => { chipIndex = (chipIndex + 1) % zonesCycle.length; setChip(zonesCycle[chipIndex]); }, 3400);
+const mast = document.querySelector('.signal-mast');
+if(mast){
+  const states = ['green','amber','red','amber'];
+  let s = 0;
+  setInterval(() => {
+    mast.querySelectorAll('.lamp').forEach(l => l.classList.remove('active'));
+    mast.querySelector('.' + states[s])?.classList.add('active');
+    s = (s + 1) % states.length;
+  }, 3000);
+}
+</script>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">OT/ICS Cybersecurity Resources Directory</title>
+  <desc id="desc">A dark technical illustration showing industrial control systems, standards, training, labs, tools and threat intelligence resources.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111d"/><stop offset="1" stop-color="#0d1b2d"/></linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4fd1c5"/><stop offset="1" stop-color="#3aa7d8"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#23334a" stroke-width="1" opacity=".35"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <circle cx="1040" cy="92" r="180" fill="#4fd1c5" opacity=".04"/>
+  <circle cx="80" cy="570" r="180" fill="#e8a33d" opacity=".035"/>
+  <g transform="translate(68 78)">
+    <rect x="0" y="0" width="144" height="38" rx="19" fill="#0f2232" stroke="#4fd1c5"/>
+    <text x="72" y="25" text-anchor="middle" fill="#4fd1c5" font-family="monospace" font-size="15" letter-spacing="2">FIELD NOTES</text>
+    <text x="0" y="104" fill="#f3f5f8" font-family="Arial,Helvetica,sans-serif" font-size="62" font-weight="700">OT/ICS Cybersecurity</text>
+    <text x="0" y="171" fill="#4fd1c5" font-family="Arial,Helvetica,sans-serif" font-size="62" font-weight="700">Resources Directory</text>
+    <text x="0" y="220" fill="#aab7c8" font-family="Arial,Helvetica,sans-serif" font-size="24">Standards, training, labs, tools, books, protocols and threat intelligence</text>
+    <text x="0" y="254" fill="#7f8fa4" font-family="Arial,Helvetica,sans-serif" font-size="18">Curated for operational technology and industrial control system cybersecurity</text>
+  </g>
+  <g transform="translate(72 402)" font-family="Arial,Helvetica,sans-serif">
+    <g><rect width="210" height="84" rx="12" fill="#111d2c" stroke="#2f465e"/><circle cx="32" cy="30" r="13" fill="none" stroke="#4fd1c5" stroke-width="2"/><path d="M25 30h14M32 23v14" stroke="#4fd1c5" stroke-width="2"/><text x="56" y="35" fill="#eef3f7" font-size="18" font-weight="700">Standards</text><text x="56" y="59" fill="#8292a6" font-size="14">IEC 62443 · NIST · CAF</text></g>
+    <g transform="translate(226 0)"><rect width="210" height="84" rx="12" fill="#111d2c" stroke="#2f465e"/><path d="M20 22h25v22H20zM25 48h15" fill="none" stroke="#4fd1c5" stroke-width="2"/><text x="56" y="35" fill="#eef3f7" font-size="18" font-weight="700">Training</text><text x="56" y="59" fill="#8292a6" font-size="14">ISA · SANS · CISA</text></g>
+    <g transform="translate(452 0)"><rect width="210" height="84" rx="12" fill="#111d2c" stroke="#2f465e"/><path d="M21 44l12-24 12 24z" fill="none" stroke="#4fd1c5" stroke-width="2"/><circle cx="33" cy="39" r="3" fill="#4fd1c5"/><text x="56" y="35" fill="#eef3f7" font-size="18" font-weight="700">Labs</text><text x="56" y="59" fill="#8292a6" font-size="14">OpenPLC · GRFICS · FUXA</text></g>
+    <g transform="translate(678 0)"><rect width="210" height="84" rx="12" fill="#111d2c" stroke="#2f465e"/><path d="M20 22h25v18H20zM25 46h15" fill="none" stroke="#4fd1c5" stroke-width="2"/><text x="56" y="35" fill="#eef3f7" font-size="18" font-weight="700">Tools</text><text x="56" y="59" fill="#8292a6" font-size="14">Wireshark · Zeek · CSET</text></g>
+    <g transform="translate(904 0)"><rect width="210" height="84" rx="12" fill="#111d2c" stroke="#2f465e"/><path d="M20 22h25v26H20zM25 28h15M25 34h15M25 40h10" fill="none" stroke="#4fd1c5" stroke-width="2"/><text x="56" y="35" fill="#eef3f7" font-size="18" font-weight="700">Research</text><text x="56" y="59" fill="#8292a6" font-size="14">ATT&amp;CK · Advisories · TI</text></g>
+  </g>
+  <g transform="translate(860 90)" opacity=".52" stroke="url(#cyan)" fill="none" stroke-width="2">
+    <rect x="0" y="45" width="94" height="124" rx="8"/>
+    <rect x="14" y="61" width="15" height="86" rx="3"/><rect x="36" y="61" width="15" height="86" rx="3"/><rect x="58" y="61" width="15" height="86" rx="3"/>
+    <path d="M94 106h54v-45h80M148 106v78h80" stroke-dasharray="8 8"/>
+    <rect x="228" y="34" width="122" height="72" rx="8"/>
+    <path d="M245 86l18-18 20 8 19-27 28 17"/>
+    <rect x="228" y="134" width="122" height="72" rx="8"/>
+    <path d="M250 156h77M250 171h52M250 186h65"/>
+    <circle cx="148" cy="106" r="7" fill="#4fd1c5" filter="url(#glow)"/>
+  </g>
+  <text x="72" y="565" fill="#6f8095" font-family="monospace" font-size="15">LAST REVIEWED · AUGUST 2026</text>
+  <text x="1128" y="565" text-anchor="end" fill="#6f8095" font-family="monospace" font-size="15">SWANOOP.GITHUB.IO</text>
+</svg>

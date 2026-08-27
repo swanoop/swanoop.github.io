@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<main class="article-shell">
+<main class="article-shell{% if page.wide %} article-shell--wide{% endif %}">
   <a class="article-back" href="{{ '/blog/' | relative_url }}">← Field Notes</a>
   <header class="article-header">
     <span class="eyebrow">{{ page.category | default: 'Field Note' }}</span>

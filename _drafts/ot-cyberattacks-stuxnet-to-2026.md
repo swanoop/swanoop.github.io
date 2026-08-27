@@ -15,6 +15,7 @@ tags:
   - SCADA Security
 read_time: 30
 image: /assets/images/chronology/ot-attack-surface.svg
+wide: true
 ---
 
 Cyber incidents involving operational technology are often compressed into the same headline: *hackers attacked critical infrastructure*. That is rarely precise enough.
